@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #303030;
+  color: #f8f3f3;
+  line-height: 1.5;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
