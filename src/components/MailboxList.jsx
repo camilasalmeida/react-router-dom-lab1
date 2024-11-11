@@ -1,15 +1,21 @@
+import { Link } from 'react-router-dom'
 
 
-const MailboxList = () => {
+const MailboxList = (props) => {
     return ( 
     <>
-    
-    
-    
-    <h1>List of all mailboxes!</h1>
+    <ul>
+    {props.mailBoxes.map((currentBox) => 
+    <li key={currentBox._id}>
+      <Link to={`/mailboxes/${currentBox._id}`}> 
+      {currentBox._id}
+      </Link>
+  </li>
+    )}
+    </ul>
+
     </>
     )
   }
-  
   
   export default MailboxList

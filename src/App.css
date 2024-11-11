@@ -12,6 +12,12 @@ body {
   line-height: 1.5;
 }
 
+nav {
+  background-color: white; /* Set the background color to white */
+  padding: 1rem;           /* Add some padding for spacing */
+  text-align: center;      /* Align text in the center */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow for depth */
+}
 
 .logo {
   height: 6em;
