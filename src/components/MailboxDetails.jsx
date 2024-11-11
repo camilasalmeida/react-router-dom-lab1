@@ -6,7 +6,9 @@ const MailboxDetails = (props) => {
     (mailbox) => mailbox._id === Number(mailboxId)
   )
 
-  console.log("Box object is: ", singleBox);
+  if (!singleBox) {
+    return <h2>Mailbox Not Found!</h2>;  
+  }
 
   return (
     <>
