@@ -17,6 +17,8 @@ const addBox = (newMailboxData) => {
    setMailBoxes([...mailBoxes, newMailboxData])
 }
 
+
+
 //----------------------------------------------------------------------------\\
   return (
   <>
@@ -27,7 +29,7 @@ const addBox = (newMailboxData) => {
 <Route path='/' element={<h2>Post Office</h2>} />
 <Route path='/new-mailbox' element={<MailboxForm addBox={addBox} /> } />
 <Route path='/mailboxes' element={<MailboxList mailBoxes={mailBoxes} />} />
-<Route path='/mailboxes/:mailboxId' element={<MailboxDetails />} />
+<Route path='/mailboxes/:mailboxId' element={<MailboxDetails mailBoxes={mailBoxes} />} />
 <Route path='*' element={<h2>Mailbox Not Found!</h2>} />
 
 </Routes>
